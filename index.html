@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" ></script>
+    <title>CHALLENGE 1</title>
+</head>
+<body>
+    <input type="texto" id="textoEncriptado">
+    <textarea name="resultado" id="textoDesencriptado" cols="30"  rows="10"></textarea>
+
+    <button type="button" id="botonEncriptado">Encriptar</button>
+    <button type="button" id="botonDesencriptado">Desencriptar</button>
+    <button type="button" id="botonCopiado">Copiar</button>
+
+        
+</body>
+<header>
+    <img src="logo.png" alt="Logo programa encriptar">
+</header>
+<main>
+    <section class="seccion__1">
+        <textarea class="textarea" placeholder="Escribe tu texto aqui"></textarea>
+        <div class="contenedor__botones">
+            <input type="button" value="Encriptar" class="boton__encritar">
+            <input type="button" value="Desencriptar" class="boton__desencritar">
+        </div>
+    </section>
+    <section class="seccio__2">
+        <div class="contenedor__imgen">
+            <img src="1.png" alt="Muñeco sentado">
+        </div>
+        <div class="contenedor__subtitulo">
+            <h3>No se encontro ningun mensaje</h3>
+        </div>
+        <div class="contenedor__parrafo">
+            <p>escribe el texto que desea encriptar o desencriptar</p>
+        </div>
+    </section>
+</main>
+<footer>
+    realizado por: Franklin Mosquera
+</footer>
+
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#botonCopiado");
+    btn3.onclick = copiar;
+</script>
+</html>
